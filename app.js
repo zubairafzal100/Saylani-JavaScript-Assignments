@@ -65,14 +65,14 @@ document.write("<b>"+name+"</b>" + " ordered " + "<b>"+quantity+"</b>" + " " + "
 
 var a = b = c;
 
-Legal Variables
+// Legal Variables
 var name;
 var birthDate;
 var birthCity;
 var fatherName;
 var residence;
 
-Illegal Variables
+// Illegal Variables
 var !name;
 var £city;
 var %state;
@@ -197,17 +197,14 @@ if (userInput) {
 var sub1 = prompt("Enter 1st Subject");
 var sub2 = prompt("Enter 2nd Subject");
 var sub3 = prompt("Enter 3rd Subject");
-document.write("<table><tr><th>Subjects</th> <th>Total Marks</th> <th>Obtained Marks</th> <th>Percentage</th></tr></table>");
 var totalMarks = 100;
-var marks1 = prompt("Enter 1st Subject Obtained Marks");
-var marks2 = prompt("Enter 2nd Subject Obtained Marks");
-var marks3 = prompt("Enter 3rd Subject Obtained Marks");
+var sumOfTotalMarks = 100 * 3;
+var marks1 = +prompt("Enter 1st Subject Obtained Marks");
+var marks2 = +prompt("Enter 2nd Subject Obtained Marks");
+var marks3 = +prompt("Enter 3rd Subject Obtained Marks");
+var totalObtainedMarks = marks1 + marks2 + marks3;
 var percentage1 = marks1 / totalMarks * 100;
 var percentage2 = marks2 / totalMarks * 100;
 var percentage3 = marks3 / totalMarks * 100;
-
-document.write("<table><tr><td>" + sub1 + "</td> <td>" + totalMarks + "</td> <td>" + marks1 + "</td> <td>" + percentage1 + "%" + "</td></tr></table>" + "<br>");
-document.write("<table><tr><td>" + sub2 + "</td> <td>" + totalMarks + "</td> <td>" + marks2 + "</td> <td>" + percentage2 + "%" +  "</td></tr></table>" + "<br>");
-document.write("<table><tr><td>" + sub3 + "</td> <td>" + totalMarks + "</td> <td>" + marks3 + "</td> <td>" + percentage3 + "%" +  "</td></tr></table>");
-document.write("<table><tr><td>" + sub3 + "</td> <td>" + totalMarks + "</td> <td>" + marks3 + "</td> <td>" + percentage3 + "%" +  "</td></tr></table>");
-
+var totalPercentage = totalObtainedMarks / sumOfTotalMarks * 100; 
+document.write("<table border = 1px><tr><th><center>Subjects</center></th> <th><center>Total Marks</center></th> <th><center>Obtained Marks</center></th> <th><center>Percentage</center></th></tr>" + "<br>" + "<tr><td><center>" + sub1 + "</center></td> <td><center>" + totalMarks + "</center></td> <td><center>" + marks1 + "</center></td> <td><center>" + percentage1 + "%</center>" + "</td></tr>" + "<br>" + "<tr><td><center>" + sub2 + "</center></td> <td><center>" + totalMarks + "</center></td> <td><center>" + marks2 + "</center></td> <td><center>" + percentage2 + "%</center>" +  "</td></tr>" + "<br>" + "<tr><td><center>" + sub3 + "</center></td> <td><center>" + totalMarks + "</center></td> <td><center>" + marks3 + "</center></td> <td><center>" + percentage3 + "%</center>" +  "</td></tr>" + "<br>" + "<tr><td>" + "" + "</td> <td><center>" + sumOfTotalMarks + "</center></td> <td><center>" + totalObtainedMarks + "</center></td> <td><center>" + totalPercentage + "%</center>" +  "</td></tr>");
