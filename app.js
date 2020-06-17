@@ -183,6 +183,62 @@
 // var sum = item1 + item2 + shippingCharges;
 // document.write("Total cost of your order is " + sum);
 
+// // task 8
+// document.write("<h1>Marks Sheet</h1> <br><br>")
+// var totalMarks = prompt("Enter Your Total Marks");
+// document.write("Total Marks: " + totalMarks + "<br>");
+// var obtainedMarks = prompt("Enter Your Obtained Marks");
+// document.write("Obtained Marks: " + obtainedMarks + "<br>")
+// var percentage = obtainedMarks / totalMarks * 100;
+// document.write("Percentage: " + percentage + "%");
+
+// // task 9
+// document.write("<h1>Currency in PKR</h1> <br><br>");
+// var Currency = 104.80 * 10 + 28 * 25;
+// document.write("Total Curreny in PKR: " + Currency);
+
+// document.write("<h1>Currency in PKR</h1> <br><br>");
+// var userInput = +prompt("Enter US Dollars");
+// var userInput1 = +prompt("Enter Saudi Riyals");
+// var total = 104.80 * userInput + 28 * userInput1;
+// document.write("Total Curreny in PKR: " + total);
+
+// // task 10
+// var num = 10 + 5 * 10 / 2;
+// document.write("Result is: " + num);
+
+// // task 11
+// document.write("<h1>Age Calculator</h1> <br><br>");
+// var currentYear = prompt("Enter Current Year");
+// document.write("Current Year: " + currentYear + "<br>")
+// var birthYear = prompt("Enter Your Birth Year");
+// document.write("Birth Year: " + birthYear + "<br>")
+// var age = currentYear - birthYear;
+// document.write("Your Age is: " + age + " Years");
+
+// // task 12
+// document.write("<h1>The Geometrizer</h1> <br><br>");
+// var radius = 20;
+// document.write("Radius of a circle: " + radius + "<br>");
+// var circumference = 2 * 3.142 * radius;
+// document.write("The circumference is: " + circumference + "<br>");
+// var area = 3.142 * radius * radius;
+// document.write("The area is: " + area);
+
+// // task 13
+// document.write("<h1>The Lifetime Supply Calculator</h1> <br><br>");
+// var snack = "Snackers";
+// document.write("Favourite Snack: " + snack + "<br>");
+// var age = 26;
+// document.write("Current Age: " + age + "<br>");
+// var maxAge = 65;
+// document.write("Estimated Maximum Age: " + maxAge + "<br>");
+// var perDayAmount = 3;
+// document.write("Amount of snacks per day: " + perDayAmount + "<br>");
+// var result = (-age) - (-maxAge) * perDayAmount;
+// document.write("You will need " + result + " " + snack + " to last you until the ripe old age of " + maxAge);
+
+
 //                                            // Chapter 6-9
 
 // // task 1                                            
